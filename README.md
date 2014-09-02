@@ -47,7 +47,8 @@ Ref from [Stream Video](http://www.leaseweblabs.com/2013/11/streaming-video-dema
   - and have [mp4s/bbb.mp4 video file](http://vod.leasewebcdn.com/bbb.mp4).
 
 1. modify nginx.conf
-```Diff of $HOME/nginx/conf/nginx.conf
+```Diff
+Diff of $HOME/nginx/conf/nginx.conf
 @@ -1,5 +1,5 @@
 
 +# Grant the right to read our $HOME/www-root if we donnot use the default $HOME/nginx/html
