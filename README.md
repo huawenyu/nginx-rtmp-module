@@ -114,7 +114,7 @@ $ tree www-root
 |   `-- bbb.mp4
 ```
 4. copy index.html from [StandAlone](http://flash.flowplayer.org/demos/standalone/plugins/streaming/rtmp.html)
-```
+```javascript
 <script>
 
 $f("wowza", "http://releases.flowplayer.org/swf/flowplayer-3.2.18.swf", {
