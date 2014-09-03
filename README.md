@@ -102,7 +102,7 @@ Diff of $HOME/nginx/conf/nginx.conf
 
 ```
 
-(2). Download flowplayer from Bottom of [flowplayer](http://flash.flowplayer.org/plugins/streaming/rtmp.html)
+(2). Download flowplayer from Bottom of [flowplayer](http://flash.flowplayer.org/plugins/streaming/rtmp.html)  
 (3). cp sub-dir 'www-root' to $HOME, so we have $HOME/www-root
 ```
 $ tree www-root
