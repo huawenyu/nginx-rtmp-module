@@ -46,7 +46,7 @@ Ref from [Stream Video](http://www.leaseweblabs.com/2013/11/streaming-video-dema
   - our www path: $HOME/www-root with two sub-dir flvs, mp4s which use to put the video files
   - and have [mp4s/bbb.mp4 video file](http://vod.leasewebcdn.com/bbb.mp4).
 
-1. modify nginx.conf
+(1). modify nginx.conf
 ```Diff
 Diff of $HOME/nginx/conf/nginx.conf
 @@ -1,5 +1,5 @@
@@ -102,8 +102,8 @@ Diff of $HOME/nginx/conf/nginx.conf
 
 ```
 
-2. Download flowplayer from Bottom of [flowplayer](http://flash.flowplayer.org/plugins/streaming/rtmp.html)
-3. cp sub-dir 'www-root' to $HOME, so we have $HOME/www-root
+(2). Download flowplayer from Bottom of [flowplayer](http://flash.flowplayer.org/plugins/streaming/rtmp.html)
+(3). cp sub-dir 'www-root' to $HOME, so we have $HOME/www-root
 ```
 $ tree www-root
 .
@@ -113,7 +113,7 @@ $ tree www-root
 |-- mp4s
 |   `-- bbb.mp4
 ```
-4. copy index.html from [StandAlone](http://flash.flowplayer.org/demos/standalone/plugins/streaming/rtmp.html)
+(4). copy index.html from [StandAlone](http://flash.flowplayer.org/demos/standalone/plugins/streaming/rtmp.html)
 ```javascript
 <script>
 
@@ -146,7 +146,8 @@ $f("wowza", "http://releases.flowplayer.org/swf/flowplayer-3.2.18.swf", {
 </script>
 
 ```
-5. restart nginx
-  - $ sudo $HOME/nginx/sbin/nginx -s stop         <<< restart nginx
-  - $ sudo $HOME/nginx/sbin/nginx -p $HOME/nginx  <<< use our compiled version
-
+(5). restart nginx
+```Shell
+  $ sudo $HOME/nginx/sbin/nginx -s stop         <<< restart nginx
+  $ sudo $HOME/nginx/sbin/nginx -p $HOME/nginx  <<< use our compiled version
+```
