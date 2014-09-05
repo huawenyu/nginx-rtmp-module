@@ -49,14 +49,26 @@ Ref from [Stream Video](http://www.leaseweblabs.com/2013/11/streaming-video-dema
 (1). modify nginx.conf
 ```Diff
 Diff of $HOME/nginx/conf/nginx.conf
-@@ -1,5 +1,5 @@
 
-+# Grant the right to read our $HOME/www-root if we donnot use the default $HOME/nginx/html
+--- nginx.conf.default  2014-08-29 14:25:20.167158477 -0700
++++ nginx.conf  2014-09-05 11:03:28.502770646 -0700
+@@ -1,10 +1,11 @@
+ 
 -#user  nobody;
 +user  root;
  worker_processes  1;
-
+ 
  #error_log  logs/error.log;
+ #error_log  logs/error.log  notice;
+ #error_log  logs/error.log  info;
++error_log  logs/error.log  debug;
+ 
+ #pid        logs/nginx.pid;
+ 
+@@ -13,6 +14,24 @@
+     worker_connections  1024;
+ }
+
 @@ -13,6 +13,24 @@
      worker_connections  1024;
  }
